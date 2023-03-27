@@ -1,0 +1,39 @@
+<!-- Utilizando Live Server no lugar de watch chrome -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: bisque;
+        }
+    </style>
+    <h1>OLA tudo bem?</h1>
+    <p><strong>oi forte</strong><br></p>
+    <div id="msg">botão</div>
+    <script>
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName('p')[0];
+        //window.document.write(p1.innerText);
+        p1.style.color = 'blue';
+        //corpo.style.background = 'black'
+        //Com formatação
+        document.write(p1.innerHTML);
+        //Somente texto sem a formatação
+        document.write(p1.innerText);
+        //Pelo id
+        var d = window.document.getElementById('msg')
+        //d.innerText = 'Estou aguardando...'
+        //Forma sem atribuir a primeira parte em uma variavel
+        window.document.getElementById('msg').innerText = 'Ola!'
+        //Por query
+         var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+    </script>
+</body>
+</html>
