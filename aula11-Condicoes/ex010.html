@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font: normal 24px Courier;
+        }
+        input#txtvel {
+            width: 50px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+    <h1>Sistema de multas</h1>
+    <h5>Velocidade do carro</h5>
+    <input type="number" name="txtvel" id="txtvel" > Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+         function calcular() {
+            var atvel = window.document.getElementById('txtvel')
+            var resMult = window.document.querySelector('div#res')
+            resMult.innerHTML = '<p>Dirija sempre com cinto segurança<p>'
+            if(Number(atvel.value) > 60) {
+                resMult.innerHTML += `Voce foi multado por estar a <strong><em>${atvel.value}Km/h</em></strong> <br>
+                sendo que o limite é de <strong><em>60Km/h</em></strong>`
+            }
+         }
+    </script>
+</body>
+</html>
