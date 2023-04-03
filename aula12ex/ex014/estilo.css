@@ -1,12 +1,9 @@
 body {
-    background-color: bisque;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15pt;
 }
 
 header {
-    background-color: brown;
-    
     text-align: center;
 }
 
@@ -20,7 +17,10 @@ section {
 }
 
 footer {
-    background-color: brown;
     text-align: center;
     font-style: italic;
+}
+
+div {
+    text-align: center;
 }
