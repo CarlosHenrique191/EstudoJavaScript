@@ -5,6 +5,7 @@ body {
 }
 
 header {
+    background-color: brown;
     
     text-align: center;
 }
@@ -19,11 +20,16 @@ section {
 }
 
 footer {
+    background-color: brown;
     text-align: center;
     font-style: italic;
 }
 
-img {
-    width: 250;
-    height: 250;
+#selnum {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#div2 {
+    margin-top: 10px;
 }
